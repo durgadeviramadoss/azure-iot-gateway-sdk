@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{64A31DEF-7230-458F-81E8-F9CAFD6EBAD9}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\azure-iot-gateway-sdk\deps\azure-c-shared-utility\inc;C:\azure-iot-gateway-sdk\.\deps\parson;C:\azure-iot-gateway-sdk\core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\azure-iot-gateway-sdk\deps\azure-c-shared-utility\inc;C:\azure-iot-gateway-sdk\.\deps\parson;C:\azure-iot-gateway-sdk\core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\azure-iot-gateway-sdk\deps\azure-c-shared-utility\inc;C:\azure-iot-gateway-sdk\.\deps\parson;C:\azure-iot-gateway-sdk\core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\azure-iot-gateway-sdk\deps\azure-c-shared-utility\inc;C:\azure-iot-gateway-sdk\.\deps\parson;C:\azure-iot-gateway-sdk\core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\azure-iot-gateway-sdk\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/azure-iot-gateway-sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\cmake-3.1.3-win32-x86\bin\cmake.exe -HC:/azure-iot-gateway-sdk -BC:/azure-iot-gateway-sdk/build --check-stamp-file C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/azure-iot-gateway-sdk/CMakeLists.txt;C:\azure-iot-gateway-sdk\CMakeLists.txt;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystem.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompilerABI.c;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTest.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestUseLaunchers.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestTargets.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\DartConfiguration.tcl.in;C:\azure-iot-gateway-sdk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/azure-iot-gateway-sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\cmake-3.1.3-win32-x86\bin\cmake.exe -HC:/azure-iot-gateway-sdk -BC:/azure-iot-gateway-sdk/build --check-stamp-file C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/azure-iot-gateway-sdk/CMakeLists.txt;C:\azure-iot-gateway-sdk\CMakeLists.txt;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystem.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompilerABI.c;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTest.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestUseLaunchers.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestTargets.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\DartConfiguration.tcl.in;C:\azure-iot-gateway-sdk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/azure-iot-gateway-sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\cmake-3.1.3-win32-x86\bin\cmake.exe -HC:/azure-iot-gateway-sdk -BC:/azure-iot-gateway-sdk/build --check-stamp-file C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/azure-iot-gateway-sdk/CMakeLists.txt;C:\azure-iot-gateway-sdk\CMakeLists.txt;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystem.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompilerABI.c;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTest.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestUseLaunchers.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestTargets.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\DartConfiguration.tcl.in;C:\azure-iot-gateway-sdk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/azure-iot-gateway-sdk/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\cmake-3.1.3-win32-x86\bin\cmake.exe -HC:/azure-iot-gateway-sdk -BC:/azure-iot-gateway-sdk/build --check-stamp-file C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/azure-iot-gateway-sdk/CMakeLists.txt;C:\azure-iot-gateway-sdk\CMakeLists.txt;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystem.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeClDeps.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompilerABI.c;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CMakeCXXCompiler.cmake.in;C:\azure-iot-gateway-sdk\build\CMakeFiles\3.1.3\CMakeCXXCompiler.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTest.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestUseLaunchers.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\CTestTargets.cmake;C:\cmake-3.1.3-win32-x86\share\cmake-3.1\Modules\DartConfiguration.tcl.in;C:\azure-iot-gateway-sdk\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\azure-iot-gateway-sdk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/ZERO_CHECK.vcxproj">
+      <Project>350F09A0-3927-4201-B7CB-E0E89A4AF361</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/agentmacros_unittests/agentmacros_unittests_dll.vcxproj">
+      <Project>7F9B1A05-80E2-4167-A1C2-2FE246F3C443</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/agentmacros_unittests/agentmacros_unittests_exe.vcxproj">
+      <Project>6ADEB370-C72C-48AB-9CEE-57EED83F31A8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/agenttime_unittests/agenttime_unittests_dll.vcxproj">
+      <Project>CAA044D5-530A-4CE3-9761-AD7DABC93145</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/agenttime_unittests/agenttime_unittests_exe.vcxproj">
+      <Project>7C8B1722-59D8-4866-8C2A-7FC8A4ECAACF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/agenttypesystem_unittests/agenttypesystem_unittests_dll.vcxproj">
+      <Project>C1FB7377-525A-4AB3-9405-655DA4A1728A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/agenttypesystem_unittests/agenttypesystem_unittests_exe.vcxproj">
+      <Project>866E17BB-29FC-4235-807C-3ABA6FDE3E90</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/amqp_frame_codec_unittests/amqp_frame_codec_unittests_dll.vcxproj">
+      <Project>FF4BCC23-D9A8-4218-BDBC-C07F919E0BE9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/amqp_frame_codec_unittests/amqp_frame_codec_unittests_exe.vcxproj">
+      <Project>C1764EB2-5FE9-43D5-914D-D89383C9B07E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/amqpvalue_limits_unittests/amqpvalue_limits_unittests_dll.vcxproj">
+      <Project>EA880A11-2553-4F20-ACE0-BE1EDE1E484F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/amqpvalue_limits_unittests/amqpvalue_limits_unittests_exe.vcxproj">
+      <Project>55D9A0F0-D288-4318-A4F0-F84B057C6D69</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/amqpvalue_unittests/amqpvalue_unittests_dll.vcxproj">
+      <Project>5C59DC32-9EDE-49B3-8DD8-A528D51F3503</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/amqpvalue_unittests/amqpvalue_unittests_exe.vcxproj">
+      <Project>8C7B5DA2-F739-4E1C-97DB-BA8A3F630D02</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/aziotsharedutil.vcxproj">
+      <Project>BDBCA774-94E5-47AE-AB52-AFD5306DDC8A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/base64_unittests/base64_unittests_dll.vcxproj">
+      <Project>0F813EFB-1B54-46AB-9058-038D4628108E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/base64_unittests/base64_unittests_exe.vcxproj">
+      <Project>8C6EB339-BD56-44C4-9309-B3750EC234EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/ble.vcxproj">
+      <Project>FB72DBE0-AB6D-44C6-9E88-AF3FD8810C85</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/ble_gatt_io_unittests/ble_gatt_io_unittests_dll.vcxproj">
+      <Project>41C0F2F0-D18E-4E6F-848D-8CB30AA461E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/ble_gatt_io_unittests/ble_gatt_io_unittests_exe.vcxproj">
+      <Project>6BB3D488-59FB-480A-9A12-4CB85ED52DF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/ble_hl.vcxproj">
+      <Project>BA371EDC-19FB-4C03-87D5-00143AC744EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/ble_hl_static.vcxproj">
+      <Project>1E139349-FD83-42F6-9966-36FA00A35985</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/ble_hl_unittests/ble_hl_unittests_dll.vcxproj">
+      <Project>FB685ADE-61A8-4303-8330-895257852D0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/ble_hl_unittests/ble_hl_unittests_exe.vcxproj">
+      <Project>92A3F042-C7F2-4823-B096-C8287A053DA7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/ble_static.vcxproj">
+      <Project>EEC6281D-4164-4B64-B760-99333C51AFE3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/ble_unittests/ble_unittests_dll.vcxproj">
+      <Project>F9807A32-B97B-4548-8049-338D0DE0FCB5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/ble_unittests/ble_unittests_exe.vcxproj">
+      <Project>0B29C177-2067-448B-B9BD-1181ADF79EE3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/bleio_seq_unittests/bleio_seq_unittests_dll.vcxproj">
+      <Project>BF8507E0-A509-4475-B958-42AD9CFEE9F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/ble/tests/bleio_seq_unittests/bleio_seq_unittests_exe.vcxproj">
+      <Project>35314EB8-7B2E-4475-A011-E9C57CA2B793</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/buffer_unittests/buffer_unittests_dll.vcxproj">
+      <Project>2FA4D6D3-447D-412F-A7B0-DEA33C5F17EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/buffer_unittests/buffer_unittests_exe.vcxproj">
+      <Project>205B59A4-9215-4B37-9CCA-C940D752BE39</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_cpp_unittests/codefirst_cpp_unittests_dll.vcxproj">
+      <Project>768015AB-445A-45DF-BBD6-77643EEA30F9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_cpp_unittests/codefirst_cpp_unittests_exe.vcxproj">
+      <Project>E2B4ECFE-6D28-4995-A0B0-505FAD38216B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_unittests/codefirst_unittests_dll.vcxproj">
+      <Project>4A05BB86-B83C-4EBA-BDC4-0B8A9F4A034A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_unittests/codefirst_unittests_exe.vcxproj">
+      <Project>5604EF46-C523-4F62-8B3C-ED725E18D6F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_withstructs_cpp_unittests/codefirst_withstructs_cpp_unittests_dll.vcxproj">
+      <Project>C2BC9F5F-25A7-4246-92AE-343A08431B78</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_withstructs_cpp_unittests/codefirst_withstructs_cpp_unittests_exe.vcxproj">
+      <Project>E337E460-0796-4393-8AE1-6DFE91C9E2C1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_withstructs_unittests/codefirst_withstructs_unittests_dll.vcxproj">
+      <Project>2FBB2A6A-A50F-4C3A-8EE8-B3BCD67D00DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/codefirst_withstructs_unittests/codefirst_withstructs_unittests_exe.vcxproj">
+      <Project>3E4BC622-623E-4796-996B-17CD51AAAA09</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/commanddecoder_unittests/commanddecoder_unittests_dll.vcxproj">
+      <Project>DF8C5632-BB8F-4590-8682-9C33E8FF1B71</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/commanddecoder_unittests/commanddecoder_unittests_exe.vcxproj">
+      <Project>590F0768-8B75-40FE-BBC5-8E8B8C39E58A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/condition_unittests/condition_unittests_dll.vcxproj">
+      <Project>20AA5654-F0A2-4A29-9881-19DA167BACEF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/condition_unittests/condition_unittests_exe.vcxproj">
+      <Project>30778838-44B5-4917-9E56-A0DD0CA5071C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/connection_unittests/connection_unittests_dll.vcxproj">
+      <Project>1D2A0F54-B05B-4D73-A5C1-FC0FCB53E869</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/connection_unittests/connection_unittests_exe.vcxproj">
+      <Project>4CE18AFB-C747-435A-BA6D-B6985DEF7EC9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/constbuffer_unittests/constbuffer_unittests_dll.vcxproj">
+      <Project>D5F297E4-D109-476A-A8DD-21BD1E1F47EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/constbuffer_unittests/constbuffer_unittests_exe.vcxproj">
+      <Project>124CE643-9F22-438F-B70E-7C13FD569EE4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/constmap_unittests/constmap_unittests_dll.vcxproj">
+      <Project>3C11ADAB-FFD0-4A9F-ACBA-242D18C71B04</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/constmap_unittests/constmap_unittests_exe.vcxproj">
+      <Project>46BD6904-E939-4901-8C99-DEB5CE206B44</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/crtabstractions_unittests/crt_abstractions_unittests_dll.vcxproj">
+      <Project>3930677F-E2A4-4607-843E-A60BC02FC9FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/crtabstractions_unittests/crt_abstractions_unittests_exe.vcxproj">
+      <Project>1A3A2259-B38D-4CE7-BE92-899C31EF58E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/ctest/ctest.vcxproj">
+      <Project>2798A751-68EC-4AAC-829C-CC2726B60B9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/ctest/unittests/ctestunittests/ctest_unittests.vcxproj">
+      <Project>22459FEB-88C0-4A5C-B0A3-6F7DAC7976DA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/datamarshaller_unittests/datamarshaller_unittests_dll.vcxproj">
+      <Project>22DD4659-F714-49F3-9D7A-2B87AA2F78F3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/datamarshaller_unittests/datamarshaller_unittests_exe.vcxproj">
+      <Project>6A9FDFBE-9A38-4A4E-9CE5-55C5BC012F01</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/datapublisher_unittests/datapublisher_unittests_dll.vcxproj">
+      <Project>EB86D798-9DAE-4033-A3DF-9CADBC9FB486</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/datapublisher_unittests/datapublisher_unittests_exe.vcxproj">
+      <Project>231B9662-8DF3-43BE-A829-3A13A14BAF64</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/doublylinkedlist_unittests/doublylinkedlist_unittests_dll.vcxproj">
+      <Project>4726D773-0C2B-47EA-ACF8-8A985409D17F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/doublylinkedlist_unittests/doublylinkedlist_unittests_exe.vcxproj">
+      <Project>A99539A9-927F-4079-977A-CB901F00455B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/dynamic_library_unittests/dynamic_library_unittests_dll.vcxproj">
+      <Project>588F2816-AC5C-497D-B3CA-42C0A5F8986C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/dynamic_library_unittests/dynamic_library_unittests_exe.vcxproj">
+      <Project>E744F734-93BB-4C7C-A56E-E3F6112AB4EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/samples/eh_sender_with_sas_token_sample/eh_sender_with_sas_token_sample.vcxproj">
+      <Project>C16F08AE-23CA-4D44-B50D-FC8F55E00908</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/frame_codec_unittests/frame_codec_unittests_dll.vcxproj">
+      <Project>3707E5BE-0A66-4318-9E81-140D020B549D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/frame_codec_unittests/frame_codec_unittests_exe.vcxproj">
+      <Project>6C11C16D-7E1E-4B18-B0F7-6D9323DFB496</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/gateway.vcxproj">
+      <Project>CE9DFF08-F811-41DC-A06A-9373C1CAD5F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/gateway_ll_unittests/gateway_ll_unittests_dll.vcxproj">
+      <Project>C3EA1AC5-5BC6-447F-87C8-98125CC34358</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/gateway_ll_unittests/gateway_ll_unittests_exe.vcxproj">
+      <Project>AA65BDCD-0F90-4CA0-9410-6AC2AB10DB61</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/gateway_unittests/gateway_unittests_dll.vcxproj">
+      <Project>FA34ACBC-3DE5-4E95-9396-5C95A05DC83E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/gateway_unittests/gateway_unittests_exe.vcxproj">
+      <Project>C2B92369-096D-4754-9E3A-1618F700482A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/gballoc_unittests/gballoc_unittests_dll.vcxproj">
+      <Project>F9A487D9-2172-4BA7-B32C-1076A8ED3868</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/gballoc_unittests/gballoc_unittests_exe.vcxproj">
+      <Project>936827D6-B6F4-4C3F-8B70-3DE0E9B97C9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/gballoc_without_init_unittests/gballoc_without_init_unittests_dll.vcxproj">
+      <Project>ACFB976B-5132-4382-91EA-64E2D12FBC54</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/gballoc_without_init_unittests/gballoc_without_init_unittests_exe.vcxproj">
+      <Project>E666E658-F1EF-4ADE-A63A-2F6223B55BDE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/gwmessage_unittests/gwmessage_unittests_dll.vcxproj">
+      <Project>994EA439-4B96-4906-8CBB-24C01FFD5F78</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/gwmessage_unittests/gwmessage_unittests_exe.vcxproj">
+      <Project>65E99F25-B424-4B32-8EE9-2E523A0EC386</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/hello_world/hello_world.vcxproj">
+      <Project>FF567317-1C05-41B7-9911-57A0FF8B781D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/hello_world/hello_world_hl.vcxproj">
+      <Project>6503BD8E-52E0-44FF-9EBD-31F615985CF9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/hello_world/hello_world_hl_static.vcxproj">
+      <Project>CD58FB66-AC1F-4BE5-B3BC-E605EF5CBB0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/samples/hello_world/hello_world_sample.vcxproj">
+      <Project>E856C892-F960-430F-9E76-179138282A6A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/hello_world/hello_world_static.vcxproj">
+      <Project>1251B46D-B73F-47BD-BF00-E0C8D17F2012</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/hmacsha256_unittests/hmacsha256_unittests_dll.vcxproj">
+      <Project>DC858F22-64B6-4273-B6ED-350048A82DD7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/hmacsha256_unittests/hmacsha256_unittests_exe.vcxproj">
+      <Project>7DE575EF-5861-4758-A048-FA605147E825</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/httpapiex_unittests/httpapiex_unittests_dll.vcxproj">
+      <Project>9330868C-127C-48C8-9971-801B04C02F21</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/httpapiex_unittests/httpapiex_unittests_exe.vcxproj">
+      <Project>96744D90-C361-4FEE-9388-519F8DF43128</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/httpapiexsas_unittests/httpapiexsas_unittests_dll.vcxproj">
+      <Project>45257C0F-1208-4673-9260-9F8BEC9E7A41</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/httpapiexsas_unittests/httpapiexsas_unittests_exe.vcxproj">
+      <Project>BB8B4C3B-AE1F-434A-ADDF-24A4DA8CE839</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/httpheaders_unittests/httpheaders_unittests_dll.vcxproj">
+      <Project>94F52603-1444-4551-B495-CD97BA22C624</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/httpheaders_unittests/httpheaders_unittests_exe.vcxproj">
+      <Project>E53BB02D-0F1E-4A98-B39C-A1C91D91FE2B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/identity_map.vcxproj">
+      <Project>83E62970-5576-4A6A-B110-0E9D33929003</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/identity_map_hl.vcxproj">
+      <Project>4249FF16-091B-48A4-8A5D-4E229F4A321E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/identity_map_hl_static.vcxproj">
+      <Project>A8ACB76C-2802-4AD8-A38F-63DB5ED718F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/identity_map_static.vcxproj">
+      <Project>96507EC8-62FA-4BAE-8CC3-5BB12A3ECBA9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/tests/idmap_hl_unittests/identitymap_hl_unittests_dll.vcxproj">
+      <Project>1C143DAB-1353-4A90-93B9-0D6C9D6A009D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/tests/idmap_hl_unittests/identitymap_hl_unittests_exe.vcxproj">
+      <Project>724973C9-E0F8-4012-8032-DE22F58E6C3D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/tests/idmap_unittests/identitymap_unittests_dll.vcxproj">
+      <Project>E3237E9C-3CCE-419D-B708-A0DA0657ADB4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/identitymap/tests/idmap_unittests/identitymap_unittests_exe.vcxproj">
+      <Project>6B44264E-D202-4380-BCC9-14C3CD2DA1DD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/iotdevice_unittests/iotdevice_unittests_dll.vcxproj">
+      <Project>ED4C5314-57B9-447F-B53E-98582D16733C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/iotdevice_unittests/iotdevice_unittests_exe.vcxproj">
+      <Project>10799245-BB02-46DC-9BA2-DBA3367A1502</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/iothub_client.vcxproj">
+      <Project>831995F7-7A8F-440C-81B2-DAF958EA0CE5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/iothub_client_amqp_transport.vcxproj">
+      <Project>11579DEC-8F30-4B28-9CDA-6E3447DC7803</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/iothub_client_http_transport.vcxproj">
+      <Project>16449BE6-176B-4D75-BEB4-162050F520AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/iothub_client_mqtt_transport.vcxproj">
+      <Project>046F3E79-FD77-46F6-B421-A7855F2C9ED6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.vcxproj">
+      <Project>EBEF11A0-45D5-4C9E-B79D-1CF938554584</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.vcxproj">
+      <Project>A0087564-3631-404A-BB1B-B87438134CDE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http_shared/iothub_client_sample_http_shared.vcxproj">
+      <Project>8A8007D4-81A7-4A14-9DB5-9E7D33623FF9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.vcxproj">
+      <Project>FA5037CD-914D-4E8C-B130-AF95F53149D7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubclient_ll_unittests/iothubclient_ll_unittests_dll.vcxproj">
+      <Project>091BA4C7-288E-4958-8FE9-1E4080EB2E98</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubclient_ll_unittests/iothubclient_ll_unittests_exe.vcxproj">
+      <Project>F3870D8D-0927-43C7-8AC3-0097B03FAD15</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubclient_unittests/iothubclient_unittests_dll.vcxproj">
+      <Project>D4768633-E874-48F1-860C-28E0DF53DAAB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubclient_unittests/iothubclient_unittests_exe.vcxproj">
+      <Project>2AD5ABB4-8C72-48E5-8569-0BB852838D6E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/iothubhttp.vcxproj">
+      <Project>388BAB35-4BDB-47D7-8EB0-D8219AB26AA7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/iothubhttp_hl.vcxproj">
+      <Project>7E7E1998-BCEE-452C-AD7F-4B24A3C68D68</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/iothubhttp_hl_static.vcxproj">
+      <Project>6BE1F02C-82E8-4E40-887D-4C30A68C0254</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/tests/iothubhttp_hl_unittests/iothubhttp_hl_unittests_dll.vcxproj">
+      <Project>E12AAAC0-D79D-4238-BD43-BB981C4CDCFC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/tests/iothubhttp_hl_unittests/iothubhttp_hl_unittests_exe.vcxproj">
+      <Project>6F73F103-FF51-4DBE-8F9A-ABBDE7E5AB2A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/iothubhttp_static.vcxproj">
+      <Project>EDA2DA2F-18B3-449C-8E26-10AC733695BA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/tests/iothubhttp_unittests/iothubhttp_unittests_dll.vcxproj">
+      <Project>086C330C-7BA0-47EC-912D-06322AE8CB4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/iothubhttp/tests/iothubhttp_unittests/iothubhttp_unittests_exe.vcxproj">
+      <Project>148A37B7-2CCA-47CF-8174-81C512044ED4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubmessage_unittests/iothubmessage_unittests_dll.vcxproj">
+      <Project>F5C81919-D3C0-4D52-BFDE-6BF4B48B7AAF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubmessage_unittests/iothubmessage_unittests_exe.vcxproj">
+      <Project>4F5F59FA-45DF-4EB6-A46B-5922B7FA13E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransport_unittests/iothubtransport_unittests_dll.vcxproj">
+      <Project>6E3D9184-A5B9-4C46-8853-3B4F905E74A5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransport_unittests/iothubtransport_unittests_exe.vcxproj">
+      <Project>ED9CA3E1-5DD7-4F2B-8F6D-17310DD7380E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransportamqp_unittests/iothubtransportamqp_unittests_dll.vcxproj">
+      <Project>1141A8A9-C566-4356-A687-62D23798388E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransportamqp_unittests/iothubtransportamqp_unittests_exe.vcxproj">
+      <Project>7969DA95-59A9-45C8-9A54-6CE526AA7E8E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransporthttp_unittests/iothubtransporthttp_unittests_dll.vcxproj">
+      <Project>6F55B6AB-FEF7-4E05-AC91-AA2342711A3A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransporthttp_unittests/iothubtransporthttp_unittests_exe.vcxproj">
+      <Project>934DE0AE-CEFD-4287-97E3-5F95E3F033AC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransportmqtt_unittests/iothubtransportmqtt_unittests_dll.vcxproj">
+      <Project>AAE3FA32-4728-4F23-8EB3-17A8F8C53F2C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/iothubtransportmqtt_unittests/iothubtransportmqtt_unittests_exe.vcxproj">
+      <Project>F0711956-1F00-4DC7-B0B3-AC3EF7123143</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/jsondecoder_unittests/jsondecoder_unittests_dll.vcxproj">
+      <Project>E419D51C-C84D-4E9C-8697-A4CA8B40AFE1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/jsondecoder_unittests/jsondecoder_unittests_exe.vcxproj">
+      <Project>1C75BE5F-00FB-41BC-BBD7-09C9A20889A3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/jsonencoder_unittests/jsonencoder_unittests_dll.vcxproj">
+      <Project>E63A3ABD-4F7F-4602-B83F-95F345C29F0C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/jsonencoder_unittests/jsonencoder_unittests_exe.vcxproj">
+      <Project>573447A9-5DF0-47DB-BCA9-63D136245B21</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/list_unittests/list_unittests_dll.vcxproj">
+      <Project>9016F8E3-7640-4A14-A1C3-684ACBDD5C52</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/list_unittests/list_unittests_exe.vcxproj">
+      <Project>51DAFD83-825A-4CC5-B8C6-3CC768ED9821</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/samples/local_client_sample/local_client_sample.vcxproj">
+      <Project>C510A4FB-A77F-48B7-BFA7-6D26DBA59732</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/samples/local_server_sample/local_server_sample.vcxproj">
+      <Project>2780966B-77E1-470A-B8C3-48EF95C3D587</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/lock_unittests/lock_unittests_dll.vcxproj">
+      <Project>3E86C886-0F7A-4948-94BF-E533C54730B7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/lock_unittests/lock_unittests_exe.vcxproj">
+      <Project>38BEA41A-4B8E-4A31-A8FE-834998AC7C8F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/logger.vcxproj">
+      <Project>22226AD2-389B-49F5-9A54-17B488ACB259</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/logger_hl.vcxproj">
+      <Project>06538DDC-9810-4AD5-BB82-A8C313D33CFB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/logger_hl_static.vcxproj">
+      <Project>04F56E92-BFFC-4242-A774-C08F86A25760</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/tests/logger_hl_unittests/logger_hl_unittests_dll.vcxproj">
+      <Project>9EA88C88-C7E1-4465-A306-093D7A499131</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/tests/logger_hl_unittests/logger_hl_unittests_exe.vcxproj">
+      <Project>5E66C610-FACC-4684-8333-B0D04A2F81AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/logger_static.vcxproj">
+      <Project>163CAEEF-1EE4-438B-8CB9-B40F889473A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/tests/logger_unittests/logger_unittests_dll.vcxproj">
+      <Project>6A8591D7-24AA-4359-B036-FEFC0B772C73</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/logger/tests/logger_unittests/logger_unittests_exe.vcxproj">
+      <Project>187DE6C3-4F8B-4E21-BDEB-225411BFD8D4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/map_unittests/map_unittests_dll.vcxproj">
+      <Project>A5AC8734-4E28-4F27-A12C-8C91A028D1B3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/map_unittests/map_unittests_exe.vcxproj">
+      <Project>12FA0860-0B3B-40F8-AAAE-6863F50B3077</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/message_bus_unittests/message_bus_unittests_dll.vcxproj">
+      <Project>1451B3C1-BCCF-4ACD-AC80-22A267AE2498</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/message_bus_unittests/message_bus_unittests_exe.vcxproj">
+      <Project>C25C1DB3-7187-46AA-98A6-81D08EFCBFD2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/samples/message_receiver_sample/message_receiver_sample.vcxproj">
+      <Project>556585C7-D03B-48E6-A139-37A4BDC6B67C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/samples/message_sender_sample/message_sender_sample.vcxproj">
+      <Project>F371BBDA-5E68-425F-8655-E7B025999016</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/message_unittests/message_unittests_dll.vcxproj">
+      <Project>98CA395F-C71A-4D90-931C-1BEB5896622C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/message_unittests/message_unittests_exe.vcxproj">
+      <Project>1FCE86AB-D049-4520-B6E0-611E20698946</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/micromock/micromock_cpp_unittest.vcxproj">
+      <Project>E3D9A1E8-414C-43D9-AE3E-B5DFB18572CD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/micromock/micromock_ctest.vcxproj">
+      <Project>182E1375-75F1-43BE-A269-983BD4AC47CD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/micromock/micromock_generator.vcxproj">
+      <Project>D204CD56-9282-4C14-8B12-25A524AE2C2F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/micromock/unittests/micromocktest/micromock_unittests_dll.vcxproj">
+      <Project>D3CCDE22-9A10-467B-AC46-651E595D03F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/micromock/unittests/micromocktest/micromock_unittests_exe.vcxproj">
+      <Project>08DF4C11-BABD-46C9-9BF2-3D00D7BEAF45</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/module_loader_unittests/module_loader_unittests_dll.vcxproj">
+      <Project>7C53FA75-6DEE-43EC-BBD7-FA569B3DA364</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/tests/module_loader_unittests/module_loader_unittests_exe.vcxproj">
+      <Project>DD5C8291-1DEE-45E7-841E-22D3E61A4B25</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/samples/mqtt_client_sample/mqtt_client_sample.vcxproj">
+      <Project>B6A28B0A-20C5-4CF7-92DD-F43F3F6B0B94</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/tests/mqtt_client_unittests/mqtt_client_unittests_dll.vcxproj">
+      <Project>21B79447-0D43-4DA4-92CF-CD4284B92AEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/tests/mqtt_client_unittests/mqtt_client_unittests_exe.vcxproj">
+      <Project>3754AEA9-8EC7-4BEE-A072-A7748A1818A3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/tests/mqtt_codec_unittests/mqtt_codec_unittests_dll.vcxproj">
+      <Project>265C97F3-D342-4DE0-B05E-4145C9B55170</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/tests/mqtt_codec_unittests/mqtt_codec_unittests_exe.vcxproj">
+      <Project>97C2972F-5551-4966-89CA-484D13136A1D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/tests/mqtt_message_unittests/mqtt_message_unittests_dll.vcxproj">
+      <Project>688ECEA6-274F-4ED4-87D8-2068C2EF3B84</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/tests/mqtt_message_unittests/mqtt_message_unittests_exe.vcxproj">
+      <Project>ED5C267D-8384-43B7-A589-C131D9E95587</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/samples/mssbcbs_sample/mssbcbs_sample.vcxproj">
+      <Project>4E24AE62-56A1-41BC-B24E-111FC3C80BCA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/multitree_unittests/multitree_unittests_dll.vcxproj">
+      <Project>5FF15585-C11B-4B9E-8C1D-26DB9C0A7273</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/multitree_unittests/multitree_unittests_exe.vcxproj">
+      <Project>694AE408-E1AA-42D7-B236-30EB1E033350</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/core/deps/parson.vcxproj">
+      <Project>21091C0E-FCB3-428F-A8A9-5F06CDE8DCCC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/refcount_unittests/refcount_unittests_dll.vcxproj">
+      <Project>A3D9462B-17D4-4144-BBCC-6B6D95F5F04A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/refcount_unittests/refcount_unittests_exe.vcxproj">
+      <Project>162A6182-1AA3-4EF6-8366-A67B4C33A7CE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/samples/remote_monitoring/remote_monitoring.vcxproj">
+      <Project>67B03835-9448-4081-AC7B-D852E261DD0C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_anonymous_unittests/sasl_anonymous_unittests_dll.vcxproj">
+      <Project>9B3CB537-6258-4E25-AE84-7F2446DF0FE5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_anonymous_unittests/sasl_anonymous_unittests_exe.vcxproj">
+      <Project>0305F285-0EBE-48B2-BCD4-2EF2917DACF3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_frame_codec_unittests/sasl_frame_codec_unittests_dll.vcxproj">
+      <Project>BE9DE995-7344-438C-9305-6E5D0175D804</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_frame_codec_unittests/sasl_frame_codec_unittests_exe.vcxproj">
+      <Project>DFBD8DEA-5DD5-442B-B522-8D391BA4B489</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_mechanism_unittests/sasl_mechanism_unittests_dll.vcxproj">
+      <Project>970B223B-3303-47C4-BBF2-7C65A7B35AD6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_mechanism_unittests/sasl_mechanism_unittests_exe.vcxproj">
+      <Project>328E7E34-04E0-4615-A38E-177BCF2AEDBD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_plain_unittests/sasl_plain_unittests_dll.vcxproj">
+      <Project>50029FC5-4F5F-4C31-A66B-2E04BC3BB57A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/sasl_plain_unittests/sasl_plain_unittests_exe.vcxproj">
+      <Project>8119BF39-EE8C-4813-8985-31D0B9EE37BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/saslclientio_unittests/saslclientio_unittests_dll.vcxproj">
+      <Project>8E8C0CDF-5AA9-4FE6-8C39-71A09876C728</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/saslclientio_unittests/saslclientio_unittests_exe.vcxproj">
+      <Project>8D9065CB-8DBC-4349-9471-1026BA9539E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/sastoken_unittests/sastoken_unittests_dll.vcxproj">
+      <Project>E4FBC4B8-2933-4631-8E56-B754605AAB73</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/sastoken_unittests/sastoken_unittests_exe.vcxproj">
+      <Project>3291393C-810F-4175-8053-7D165AA2D48E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schema_unittests/schema_unittests_dll.vcxproj">
+      <Project>B5ED03FE-FF48-405E-BFC0-160365A9DD57</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schema_unittests/schema_unittests_exe.vcxproj">
+      <Project>70CB8763-54EC-4250-8F37-7AFB196E3B6D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schemalib_unittests/schemalib_unittests_dll.vcxproj">
+      <Project>F4C85EB2-7350-488B-BBDF-759EA98849FC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schemalib_unittests/schemalib_unittests_exe.vcxproj">
+      <Project>4F89392B-4DD2-492C-94EB-43BA7345DFBF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schemalib_without_init_unittests/schemalib_without_init_unittests_dll.vcxproj">
+      <Project>E0D97E20-4FB9-4E6E-B9C4-69F4966A86C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schemalib_without_init_unittests/schemalib_without_init_unittests_exe.vcxproj">
+      <Project>0808A59F-93FA-4BC6-B175-57185BD09195</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schemaserializer_unittests/schemaserializer_unittests_dll.vcxproj">
+      <Project>4E358DF2-673B-4031-9C49-1E20E03A724B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/tests/schemaserializer_unittests/schemaserializer_unittests_exe.vcxproj">
+      <Project>66BDA302-0996-4617-9696-E2D1E3A06D3B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/serializer.vcxproj">
+      <Project>C3E75B3B-4A76-4F99-B6D8-2697963F771C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/session_unittests/session_unittests_dll.vcxproj">
+      <Project>F8AC2FC3-D187-43DE-9A39-3D0FC7D86298</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/tests/session_unittests/session_unittests_exe.vcxproj">
+      <Project>040A434E-28DC-4900-92B7-97445F707089</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/samples/simplesample_amqp/simplesample_amqp.vcxproj">
+      <Project>19E62F5F-C175-459C-9908-A1F3B3B3CC89</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/samples/simplesample_http/simplesample_http.vcxproj">
+      <Project>5925C5D7-9D51-4A54-8FCD-39675E8DF22F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/samples/simplesample_mqtt/simplesample_mqtt.vcxproj">
+      <Project>CC32F4E5-7E8E-410A-9A67-33E70D407DD3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/simulated_device/simulated_device.vcxproj">
+      <Project>E895A22C-DD96-4BF7-B315-6BF4D9F8A5C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/samples/simulated_device_cloud_upload/simulated_device_cloud_upload_sample.vcxproj">
+      <Project>E10CABF1-53DC-4C6C-BB55-7F8A7240E86D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/simulated_device/simulated_device_hl.vcxproj">
+      <Project>71A2FEC6-B42B-4889-9476-221FE8D339D2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/simulated_device/simulated_device_hl_static.vcxproj">
+      <Project>5003D84D-8B91-41F0-8A28-08AA1B9E5307</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/modules/simulated_device/simulated_device_static.vcxproj">
+      <Project>1DDEDE85-8ED0-4485-8C86-7DE4EDFB5C62</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/socketio_win32_unittests/socketio_win32_unittests_dll.vcxproj">
+      <Project>9313B04B-81B2-4C2B-A065-4CABFFB7CE03</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/socketio_win32_unittests/socketio_win32_unittests_exe.vcxproj">
+      <Project>51547E77-ED4C-419F-BE54-CF6435E66FB7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/string_tokenizer_unittests/string_tokenizer_unittests_dll.vcxproj">
+      <Project>710A88B7-B115-4ACC-9665-3FFB8C858D12</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/string_tokenizer_unittests/string_tokenizer_unittests_exe.vcxproj">
+      <Project>B5B2432E-243B-44EB-BDDD-64D4461BF3C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/strings_unittests/strings_unittests_dll.vcxproj">
+      <Project>1670B0FA-AA7C-4EC5-9076-3DC64205688D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/strings_unittests/strings_unittests_exe.vcxproj">
+      <Project>755B3055-E55C-4A37-94EB-3094D6C3D0DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/serializer/samples/temp_sensor_anomaly/temp_sensor_anomaly.vcxproj">
+      <Project>6AB23316-FDC8-4C63-B8BC-991E11FDA2A1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/testrunnerswitcher/testrunnerswitcher.vcxproj">
+      <Project>3266D576-7DF4-4EA3-8EDF-B875E9C661B8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/tickcounter_unittests/tickcounter_unittests_dll.vcxproj">
+      <Project>41C04926-CFAC-4757-B63B-F6E5E0134718</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/tickcounter_unittests/tickcounter_unittests_exe.vcxproj">
+      <Project>E0AEAA63-D3D3-4F34-A72C-00ED8574B8A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-uamqp-c/uamqp.vcxproj">
+      <Project>084D0F39-B148-43CE-9553-82CD4970DCA9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/umock_c.vcxproj">
+      <Project>E5C9C5F4-9955-4B13-9F51-4F42FFA0B9A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umock_c_unittests/umock_c_unittests_dll.vcxproj">
+      <Project>663A2A7D-844D-4BF6-B85B-F1BC8CFFB4AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umock_c_unittests/umock_c_unittests_exe.vcxproj">
+      <Project>E28530C2-BD8E-4A52-9730-135F4F001BC6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umock_c_without_init_unittests/umock_c_without_init_unittests_dll.vcxproj">
+      <Project>E87D9866-2EC4-4CDA-B946-15A447E26900</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umock_c_without_init_unittests/umock_c_without_init_unittests_exe.vcxproj">
+      <Project>071F0123-3E00-4F03-88E4-932069AB54A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umockcall_unittests/umockcall_unittests_dll.vcxproj">
+      <Project>618C323E-F3D5-4CEF-9A70-8EF3CE29CB27</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umockcall_unittests/umockcall_unittests_exe.vcxproj">
+      <Project>D70C7BDB-37D4-4983-98EC-333D79A4A304</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umockcallrecorder_unittests/umockcallrecorder_unittests_dll.vcxproj">
+      <Project>CE062F34-458A-4ECC-B160-3C60F7B5083C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umockcallrecorder_unittests/umockcallrecorder_unittests_exe.vcxproj">
+      <Project>D91E149D-04D8-4CCA-B768-FFEB10B504C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypename_unittests/umocktypename_unittests_dll.vcxproj">
+      <Project>5E56D727-890E-46F7-9886-7DF25CEE5B51</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypename_unittests/umocktypename_unittests_exe.vcxproj">
+      <Project>7B0145A2-90F3-45EC-9BE1-E7792A6D1A08</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_c_unittests/umocktypes_c_unittests_dll.vcxproj">
+      <Project>8F7E8ED6-3879-4EBB-9D36-434C2861D3CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_c_unittests/umocktypes_c_unittests_exe.vcxproj">
+      <Project>681CF3DC-ED48-4040-8F2E-4DE7B03EBF13</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_charptr_unittests/umocktypes_charptr_unittests_dll.vcxproj">
+      <Project>78B16B89-AF47-4341-B1AC-BF23A065A308</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_charptr_unittests/umocktypes_charptr_unittests_exe.vcxproj">
+      <Project>D672A1AF-F736-4134-9AA4-E629E7081CEB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_unittests/umocktypes_unittests_dll.vcxproj">
+      <Project>6E00DF9F-5338-434F-9EDB-98AB55430BCF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_unittests/umocktypes_unittests_exe.vcxproj">
+      <Project>C9FF3643-7833-484B-AA74-BE9DC4AE8A8F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_without_init_unittests/umocktypes_without_init_unittests_dll.vcxproj">
+      <Project>B681D20B-1475-45C6-946E-E42F31A5CB4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/umock_c/tests/umocktypes_without_init_unittests/umocktypes_without_init_unittests_exe.vcxproj">
+      <Project>FF3FA502-B8C6-4A2E-9709-F4BB3DA80FAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/azure-umqtt-c/umqtt.vcxproj">
+      <Project>8B24F557-B527-463E-8ACD-E6FAC87E5A2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/uniqueid_unittests/uniqueid_unittests_dll.vcxproj">
+      <Project>DAE34D75-71BC-41C9-9C11-D37DD6927DED</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/uniqueid_unittests/uniqueid_unittests_exe.vcxproj">
+      <Project>E5BB4411-E35A-47E0-8F34-EF5F79132CFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/urlencode_unittests/urlencode_unittests_dll.vcxproj">
+      <Project>DAF8216C-D4F8-4A01-8536-A65FA3D2F91E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/urlencode_unittests/urlencode_unittests_exe.vcxproj">
+      <Project>169E4CFF-2278-46CB-9DA5-2D044DC4817F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/vector_unittests/vector_unittests_dll.vcxproj">
+      <Project>630F3DCD-4D59-4CF8-A5A4-BEC7C626C640</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/vector_unittests/vector_unittests_exe.vcxproj">
+      <Project>B5E1FDB4-6531-4953-B2ED-CFFCEDB6CEBD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/version_unittests/version_unittests_dll.vcxproj">
+      <Project>CFA75414-6052-4DE0-A4E2-F9CB3CF14888</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-iot-sdks/c/iothub_client/tests/version_unittests/version_unittests_exe.vcxproj">
+      <Project>55D7A3A4-3301-4BB3-B489-F0F914F39C90</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/ctest/unittests/ctestunittests/whentestfunctioninitializefailstests.vcxproj">
+      <Project>93F282ED-12DC-45B7-B68D-DCB7C2DFFF3B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/testtools/ctest/unittests/ctestunittests/whentestsuiteinitializefailstests.vcxproj">
+      <Project>CE6E940C-B60C-4BFC-B142-451C8BBB9A11</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/xio_unittests/xio_unittests_dll.vcxproj">
+      <Project>504A50E3-F983-4D34-9D00-C73E920A8491</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/azure-iot-gateway-sdk/build/deps/azure-c-shared-utility/tests/xio_unittests/xio_unittests_exe.vcxproj">
+      <Project>B3E937FB-AF84-43F9-AE84-53C6469023DE</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
